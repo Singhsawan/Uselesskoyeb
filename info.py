@@ -18,11 +18,11 @@ def is_enabled(value, default):
 
 SESSION = environ.get('SESSION', 'Media_srch')
 
-API_ID = int(environ.get('API_ID', ''))
+API_ID = int(environ.get('API_ID', '29362464'))
 
-API_HASH = environ.get('API_HASH', '')
+API_HASH = environ.get('API_HASH', '31973315b0872a0478886de31a1e4848')
 
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6115839775:AAHXfecuChGkyI8YVF065IOeLsU0ELNwPKA")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -37,7 +37,7 @@ CLOSE_IMG = (environ.get('CLOSE_IMG', 'https://telegra.ph/file/6e9dd701bac49632c
 JOIN_IMG = (environ.get('JOIN_IMG', 'https://telegra.ph/file/2718e562b65da275a7c56.jpg https://telegra.ph/file/a32c89628fa5444dc4a49.jpg https://telegra.ph/file/03bd753c7d9ca801ef5c3.jpg https://telegra.ph/file/ef824cc41a4795ddb1053.png https://telegra.ph/file/45c5df081bd4c631aca0d.jpg https://graph.org/file/df99ea75947f24e9ac054.jpg https://graph.org/file/461c7839160e988256b8b.jpg https://graph.org/file/5ea045fc7d61908fce1a0.jpg https://graph.org/file/afb59c5fe43c92be439a9.jpg ')).split()
                     
 # Admins, Log, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5651594253').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -68,8 +68,8 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://RoyalDwip:RoyalDwip@cluster0.0sp6pvf.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://singhsawan880:singhsawan880@cluster0.uzawtpr.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "mongadb")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 # FSUB
@@ -88,8 +88,8 @@ APPROVED = environ.get("APPROVED_WELCOME", "off").lower()
 
 # Others
 VERIFY = bool(environ.get('VERIFY',True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in') #
-SHORTLINK_API = environ.get('SHORTLINK_API', '652e60db3da459d3f15dbb1775fa0aaf62b6ec4c') #
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'TinyFy.in') #
+SHORTLINK_API = environ.get('SHORTLINK_API', '8f29e4130ed3439c4c5cfc5c56dae86c0aff0daa') #
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK',False))
 NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG',True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
@@ -100,7 +100,7 @@ MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/z_harbour")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/z_harbour_files')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mdisk_bots')
 MSG_ALRT = environ.get('MSG_ALRT', 'Long Live Black Market Fed')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001551869890'))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', ' -1001898364516'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
